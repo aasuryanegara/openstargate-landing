@@ -1,20 +1,37 @@
-import { useState, useEffect } from "react";
-import { Bitcoin, Gamepad, Menu, X } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
-const Navbar = () => {
+import { useState, useEffect } from "react";
+import { Bitcoin, Gamepad, Menu, X, Globe } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import {
+  DropdownMenu,
+  DropdownMenuTrigger,
+  DropdownMenuContent,
+  DropdownMenuItem,
+} from "@/components/ui/dropdown-menu";
+
+// Provide full translation data
+const languages = [
+  { code: "en", name: "English" },
+  { code: "id", name: "Indonesian" },
+  { code: "tr", name: "Turkish" },
+  { code: "pt", name: "Brazilian" }
+];
+
+const languageLabels: Record<string, string> = {
+  en: "English",
+  id: "Bahasa Indonesia",
+  tr: "Türkçe",
+  pt: "Português Brasileiro"
+};
+
+const Navbar = ({ selectedLang, setSelectedLang }: { selectedLang: string, setSelectedLang: (lang: string) => void }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 10) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
+      setIsScrolled(window.scrollY > 10);
     };
-
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -67,6 +84,26 @@ const Navbar = () => {
         </nav>
 
         <div className="hidden md:flex items-center gap-4">
+          {/* Language Dropdown */}
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <Button variant="ghost" className="text-white">
+                <Globe className="h-5 w-5 mr-2" />
+                {languageLabels[selectedLang]}
+              </Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent side="bottom" align="start" className="bg-crypto-dark z-[100] min-w-[180px]">
+              {languages.map((lang) => (
+                <DropdownMenuItem
+                  key={lang.code}
+                  onClick={() => setSelectedLang(lang.code)}
+                  className="cursor-pointer"
+                >
+                  {languageLabels[lang.code]}
+                </DropdownMenuItem>
+              ))}
+            </DropdownMenuContent>
+          </DropdownMenu>
           <Button variant="ghost" className="text-white gap-2">
             <Bitcoin className="h-4 w-4" />
             Connect Wallet
@@ -117,7 +154,30 @@ const Navbar = () => {
             >
               Community
             </a>
+            {/* Mobile language dropdown simplified */}
             <div className="flex flex-col w-full gap-4 mt-6">
+              <DropdownMenu>
+                <DropdownMenuTrigger asChild>
+                  <Button variant="outline" className="text-white w-full gap-2">
+                    <Globe className="h-4 w-4" />
+                    {languageLabels[selectedLang]}
+                  </Button>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent side="bottom" align="start" className="bg-crypto-dark z-[100] min-w-[180px]">
+                  {languages.map((lang) => (
+                    <DropdownMenuItem
+                      key={lang.code}
+                      onClick={() => {
+                        setSelectedLang(lang.code);
+                        setMobileMenuOpen(false);
+                      }}
+                      className="cursor-pointer"
+                    >
+                      {languageLabels[lang.code]}
+                    </DropdownMenuItem>
+                  ))}
+                </DropdownMenuContent>
+              </DropdownMenu>
               <Button variant="outline" className="text-white gap-2 w-full">
                 <Bitcoin className="h-4 w-4" />
                 Connect Wallet

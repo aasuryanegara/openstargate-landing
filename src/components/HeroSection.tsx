@@ -1,4 +1,3 @@
-
 import { Rocket, Zap, CircleDollarSign, Gamepad, Bitcoin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -47,7 +46,7 @@ const HeroSection = () => {
             </h1>
             
             <p className="text-lg text-white/70 leading-relaxed max-w-xl">
-              OpenStartGate connects gamers, developers, and investors in a decentralized
+              OpenStarGate connects gamers, developers, and investors in a decentralized
               ecosystem where play meets profit and innovation knows no bounds.
             </p>
             

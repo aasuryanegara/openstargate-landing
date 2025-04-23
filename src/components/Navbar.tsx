@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Bitcoin, Gamepad, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -35,7 +34,7 @@ const Navbar = () => {
           </div>
           <span className="text-2xl font-bold tracking-tight">
             <span className="text-white">Open</span>
-            <span className="text-gradient">StartGate</span>
+            <span className="text-gradient">StarGate</span>
           </span>
         </a>
 

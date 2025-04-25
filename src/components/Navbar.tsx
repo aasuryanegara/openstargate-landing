@@ -1,6 +1,5 @@
-
 import { useState, useEffect } from "react";
-import { Bitcoin, Gamepad, Menu, X, Globe } from "lucide-react";
+import { Gamepad, Menu, X, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -9,7 +8,6 @@ import {
   DropdownMenuItem,
 } from "@/components/ui/dropdown-menu";
 
-// Provide full translation data
 const languages = [
   { code: "en", name: "English" },
   { code: "id", name: "Indonesian" },
@@ -55,7 +53,6 @@ const Navbar = ({ selectedLang, setSelectedLang }: { selectedLang: string, setSe
           </span>
         </a>
 
-        {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-8">
           <a
             href="#games"
@@ -84,7 +81,6 @@ const Navbar = ({ selectedLang, setSelectedLang }: { selectedLang: string, setSe
         </nav>
 
         <div className="hidden md:flex items-center gap-4">
-          {/* Language Dropdown */}
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button variant="ghost" className="text-white">
@@ -104,16 +100,11 @@ const Navbar = ({ selectedLang, setSelectedLang }: { selectedLang: string, setSe
               ))}
             </DropdownMenuContent>
           </DropdownMenu>
-          <Button variant="ghost" className="text-white gap-2">
-            <Bitcoin className="h-4 w-4" />
-            Connect Wallet
-          </Button>
           <Button className="bg-crypto-blue hover:bg-crypto-blue/80 text-white">
             Get Started
           </Button>
         </div>
 
-        {/* Mobile Menu Button */}
         <button
           className="md:hidden text-white"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -122,7 +113,6 @@ const Navbar = ({ selectedLang, setSelectedLang }: { selectedLang: string, setSe
         </button>
       </div>
 
-      {/* Mobile Menu */}
       {mobileMenuOpen && (
         <div className="fixed inset-0 bg-black/95 z-40 pt-20 px-4 md:hidden">
           <nav className="flex flex-col gap-6 items-center">
@@ -154,7 +144,6 @@ const Navbar = ({ selectedLang, setSelectedLang }: { selectedLang: string, setSe
             >
               Community
             </a>
-            {/* Mobile language dropdown simplified */}
             <div className="flex flex-col w-full gap-4 mt-6">
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
@@ -178,10 +167,6 @@ const Navbar = ({ selectedLang, setSelectedLang }: { selectedLang: string, setSe
                   ))}
                 </DropdownMenuContent>
               </DropdownMenu>
-              <Button variant="outline" className="text-white gap-2 w-full">
-                <Bitcoin className="h-4 w-4" />
-                Connect Wallet
-              </Button>
               <Button className="bg-crypto-blue hover:bg-crypto-blue/80 text-white w-full">
                 Get Started
               </Button>

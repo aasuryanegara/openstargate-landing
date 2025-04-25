@@ -10,7 +10,6 @@ import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
 import ParticleBackground from "@/components/ParticleBackground";
 import AnimatedGraphics from "@/components/AnimatedGraphics";
-import TeamSection from "@/components/TeamSection";
 
 // Get language from localStorage or browser
 function getInitialLang() {
@@ -45,7 +44,6 @@ const Index = () => {
         <RoadmapSection />
         <CommunitySection />
         <CTASection />
-        <TeamSection /> 
       </main>
       <Footer />
     </div>

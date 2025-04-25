@@ -1,6 +1,5 @@
-
 import { useState, useEffect } from "react";
-import { Bitcoin, Gamepad, Menu, X, Globe } from "lucide-react";
+import { Gamepad, Menu, X, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -104,10 +103,6 @@ const Navbar = ({ selectedLang, setSelectedLang }: { selectedLang: string, setSe
               ))}
             </DropdownMenuContent>
           </DropdownMenu>
-          <Button variant="ghost" className="text-white gap-2">
-            <Bitcoin className="h-4 w-4" />
-            Connect Wallet
-          </Button>
           <Button className="bg-crypto-blue hover:bg-crypto-blue/80 text-white">
             Get Started
           </Button>
@@ -178,10 +173,6 @@ const Navbar = ({ selectedLang, setSelectedLang }: { selectedLang: string, setSe
                   ))}
                 </DropdownMenuContent>
               </DropdownMenu>
-              <Button variant="outline" className="text-white gap-2 w-full">
-                <Bitcoin className="h-4 w-4" />
-                Connect Wallet
-              </Button>
               <Button className="bg-crypto-blue hover:bg-crypto-blue/80 text-white w-full">
                 Get Started
               </Button>

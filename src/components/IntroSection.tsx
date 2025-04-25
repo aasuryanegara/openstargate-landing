@@ -1,4 +1,3 @@
-
 import React from "react";
 
 // Translations for each language
@@ -8,26 +7,19 @@ const translations = {
     intro: `In a world where artificial intelligence governs the pulse of civilization, OpenStarGate emerges from a legendary super-intelligence laboratory as a beacon of transformation. Born from the collaboration between elite blockchain developers and visionary scientists, OpenStarGate is not just a platform — it is an AI entity, a decentralized oracle of prediction, and the guardian of transparent wealth.
 Our Mission: To redefine entertainment, finance, and fairness by combining the power of AI prediction algorithms with blockchain transparency.`,
     visionTitle: "🔮 Our vision",
-    vision: `The OpenStarGate saga has only just begun.
-We envision a world where everyone can participate in a digital economy that is fair, transparent and rewarding. OpenStarGate is more than just a guessing game. It is the beginning of the “Fortune Economy of Lucky Intelligence”.
-Our roadmap includes
-* developing various decentralized games (strategy, prediction, education)
-* promoting decentralized values globally
-* and allowing players to gain wealth while having fun
-By transforming prediction into a way of life, OpenStarGate enables users to find their own rhythm in an unpredictable world.`,
+    vision: `developing various decentralized games (strategy, prediction, education)
+promoting decentralized values globally
+and allowing players to gain wealth while having fun`,
     tokenTitle: "🌟 Token Model: OPS & OPSUSDT",
-    token: `OPS Token: The native utility token representing the spirit of OpenStarGate.
-* Minted fairly through user interaction, not controlled by institutions
-* A symbol of wealth, luck, and wisdom
-OPSUSDT Token: A stable game reward token
-* Given as mining credit even upon game loss
-* Fuels continued participation and long-term engagement
-Game Design Highlights:
-* Most users have a high probability of correct prediction
-* Even loss contributes value (token mining credit)
-* Players define how they play without compromising expected returns`,
+    token: `Minted fairly through user interaction, not controlled by institutions
+A symbol of wealth, luck, and wisdom
+Given as mining credit even upon game loss
+Fuels continued participation and long-term engagement
+Most users have a high probability of correct prediction
+Even loss contributes value (token mining credit)
+Players define how they play without compromising expected returns`,
     economyTitle: "🔷 Sustainable Economic Model",
-    economy: `OpenStarGate’s economic framework is designed to achieve long-term stability through the following key mechanisms:
+    economy: `OpenStarGate's economic framework is designed to achieve long-term stability through the following key mechanisms:
 
 ✔ Price-driven model – unlocking conditions are directly linked to price performance.
 
@@ -79,24 +71,17 @@ Dare to predict. Dare to win. Dare to open the star gate.`
     intro: `Di dunia di mana kecerdasan buatan mengendalikan nadi peradaban, OpenStarGate muncul dari laboratorium super-intelejen legendaris sebagai mercusuar perubahan. Lahir dari kolaborasi antara pengembang blockchain elit dan ilmuwan visioner, OpenStarGate bukan sekadar platform — ini adalah entitas AI, oracle prediksi terdesentralisasi, dan penjaga kekayaan yang transparan.
 Misi Kami: Mendefinisikan ulang hiburan, keuangan, dan keadilan dengan menggabungkan kekuatan algoritma prediksi AI dan transparansi blockchain.`,
     visionTitle: "🔮 Visi Kami",
-    vision: `Kisah OpenStarGate baru saja dimulai.
-Kami membayangkan dunia di mana semua orang dapat berpartisipasi dalam ekonomi digital yang adil, transparan, dan menguntungkan. OpenStarGate lebih dari sekadar permainan tebak-tebakan. Ini adalah awal dari "Ekonomi Keberuntungan Kecerdasan".
-Roadmap kami meliputi
-* mengembangkan berbagai game terdesentralisasi (strategi, prediksi, edukasi)
-* mempromosikan nilai-nilai desentralisasi ke seluruh dunia
-* dan memungkinkan pemain memperoleh kekayaan sambil bersenang-senang
-Dengan mengubah prediksi menjadi gaya hidup, OpenStarGate membantu pengguna menemukan irama mereka sendiri di dunia yang tak terduga.`,
+    vision: `mengembangkan berbagai game terdesentralisasi (strategi, prediksi, edukasi)
+mempromosikan nilai-nilai desentralisasi ke seluruh dunia
+dan memungkinkan pemain memperoleh kekayaan sambil bersenang-senang`,
     tokenTitle: "🌟 Model Token: OPS & OPSUSDT",
-    token: `Token OPS: Token utilitas asli yang merepresentasikan semangat OpenStarGate.
-* Dicetak secara adil melalui interaksi pengguna, tidak dikontrol institusi
-* Simbol kekayaan, keberuntungan, dan kebijaksanaan
-Token OPSUSDT: Token hadiah permainan yang stabil
-* Diberikan sebagai kredit penambangan bahkan saat kalah
-* Mendukung partisipasi berkelanjutan dan keterlibatan jangka panjang
-Sorotan Desain Game:
-* Sebagian besar pengguna berpeluang tinggi untuk prediksi benar
-* Kekalahan pun tetap memberikan nilai (kredit token mining)
-* Pemain mendefinisikan cara bermain tanpa mengorbankan ekspektasi hasil`,
+    token: `Dicetak secara adil melalui interaksi pengguna, tidak dikontrol institusi
+Simbol kekayaan, keberuntungan, dan kebijaksanaan
+Diberikan sebagai kredit penambangan bahkan saat kalah
+Mendukung partisipasi berkelanjutan dan keterlibatan jangka panjang
+Sebagian besar pengguna berpeluang tinggi untuk prediksi benar
+Kekalahan pun tetap memberikan nilai (kredit token mining)
+Pemain mendefinisikan cara bermain tanpa mengorbankan ekspektasi hasil`,
     economyTitle: "🔷 Model Ekonomi Berkelanjutan",
     economy: `Kerangka ekonomi OpenStarGate dirancang untuk stabilitas jangka panjang melalui mekanisme utama berikut:
 
@@ -150,24 +135,17 @@ Berani menebak. Berani menang. Berani buka star gate.`
     intro: `Yapay zekânın uygarlığın nabzını kontrol ettiği bir dünyada, OpenStarGate efsanevi bir süper zekâ laboratuvarından dönüşümün feneri olarak ortaya çıktı. Seçkin blok zinciri geliştiricileri ve vizyoner bilim insanlarının işbirliği ile doğan OpenStarGate, sadece bir platform değil — bir AI varlığı, merkeziyetsiz kehanet oraklı ve şeffaf servetin koruyucusudur.
 Misyonumuz: Eğlenceyi, finansı ve adaleti, AI tahmin algoritmaları ve blok zinciri şeffaflığıyla yeniden tanımlamak.`,
     visionTitle: "🔮 Vizyonumuz",
-    vision: `OpenStarGate destanı henüz başladı.
-Herkesin adil, şeffaf ve ödüllendirici bir dijital ekonomiye katılabildiği bir dünya hayal ediyoruz. OpenStarGate yalnızca bir tahmin oyunu değil. “Lucky Intelligence Fortune Economy”nin başlangıcıdır.
-Yol haritamızda:
-* çeşitli merkeziyetsiz oyunlar geliştirmek (strateji, tahmin, eğitim)
-* merkeziyetsiz değerleri küresel olarak yaymak
-* oyuncuların eğlenirken servet kazanmasını sağlamak var
-Tahmini bir yaşam tarzına dönüştürerek, OpenStarGate kullanıcılara öngörülemeyen bir dünyada kendi ritmini bulma imkânı verir.`,
+    vision: `çeşitli merkeziyetsiz oyunlar geliştirmek (strateji, tahmin, eğitim)
+merkeziyetsiz değerleri küresel olarak yaymak
+oyuncuların eğlenirken servet kazanmasını sağlamak`,
     tokenTitle: "🌟 Token Modeli: OPS & OPSUSDT",
-    token: `OPS Token: OpenStarGate ruhunu temsil eden yerel yardımcı token.
-* Kullanıcı etkileşimiyle adil olarak üretilir, kurumlar tarafından kontrol edilmez
-* Servet, şans ve bilgelik sembolü
-OPSUSDT Token: Sabit oyun ödül tokenı
-* Oyun kaybı durumunda bile madencilik kredisi olarak verilir
-* Devam eden katılımı ve uzun vadeli ilgiyi teşvik eder
-Oyun Tasarımının Öne Çıkan Noktaları:
-* Çoğu kullanıcının doğru tahmin ihtimali yüksektir
-* Kaybetmek bile değer kazandırır (madencilik kredisi)
-* Oyuncular beklenen getiriden ödün vermeden nasıl oynayacağına kendileri karar verir`,
+    token: `Kullanıcı etkileşimiyle adil olarak üretilir, kurumlar tarafından kontrol edilmez
+Servet, şans ve bilgelik sembolü
+Oyun kaybı durumunda bile madencilik kredisi olarak verilir
+Devam eden katılımı ve uzun vadeli ilgiyi teşvik eder
+Çoğu kullanıcının doğru tahmin ihtimali yüksektir
+Kaybetmek bile değer kazandırır (madencilik kredisi)
+Oyuncular beklenen getiriden ödün vermeden nasıl oynayacağına kendileri karar verir`,
     economyTitle: "🔷 Sürdürülebilir Ekonomik Model",
     economy: `OpenStarGate’in ekonomik çerçevesi uzun vadeli istikrarı şu temel mekanizmalarla hedefler:
 
@@ -221,24 +199,17 @@ Tahmin etmeye cesaret et. Kazanmaya cesaret et. Yıldız kapısını açmaya ces
     intro: `Em um mundo onde a inteligência artificial rege o pulso da civilização, OpenStarGate surge de um lendário laboratório de superinteligência como um farol de transformação. Nascido da colaboração de desenvolvedores de blockchain de elite e cientistas visionários, OpenStarGate não é apenas uma plataforma — é uma entidade de IA, um oráculo descentralizado de previsões e o guardião da riqueza transparente.
 Nossa Missão: Redefinir entretenimento, finanças e justiça, combinando algoritmos de IA com a transparência do blockchain.`,
     visionTitle: "🔮 Nossa visão",
-    vision: `A saga OpenStarGate está apenas começando.
-Imaginamos um mundo onde todos podem participar de uma economia digital justa, transparente e recompensadora. OpenStarGate é mais do que um jogo de adivinhação. É o início da "Economia da Sorte e Inteligência".
-Nosso roteiro inclui
-* desenvolver vários jogos descentralizados (estratégia, previsão, educação)
-* promover valores descentralizados globalmente
-* permitir que os jogadores ganhem riqueza enquanto se divertem
-Transformando a previsão em um estilo de vida, OpenStarGate permite que os usuários encontrem seu próprio ritmo em um mundo imprevisível.`,
+    vision: `desenvolver vários jogos descentralizados (estratégia, previsão, educação)
+promover valores descentralizados globalmente
+permitir que os jogadores ganhem riqueza enquanto se divertem`,
     tokenTitle: "🌟 Modelo de Token: OPS & OPSUSDT",
-    token: `Token OPS: Token utilitário nativo que representa o espírito do OpenStarGate.
-* Cunhado de forma justa através da interação do usuário, não controlado por instituições
-* Um símbolo de riqueza, sorte e sabedoria
-Token OPSUSDT: Token de recompensa estável do jogo
-* Dado como crédito de mineração mesmo na derrota
-* Incentiva a participação contínua e o engajamento a longo prazo
-Destaques de Design de Jogo:
-* A maioria dos usuários tem alta probabilidade de previsão correta
-* Mesmo a derrota contribui com valor (crédito de mineração de token)
-* Jogadores definem como jogar sem comprometer os retornos esperados`,
+    token: `Cunhado de forma justa através da interação do usuário, não controlado por instituições
+Um símbolo de riqueza, sorte e sabedoria
+Dado como crédito de mineração mesmo na derrota
+Incentiva a participação contínua e o engajamento a longo prazo
+A maioria dos usuários tem alta probabilidade de previsão correta
+Mesmo a derrota contribui com valor (crédito de mineração de token)
+Jogadores definem como jogar sem comprometer os retornos esperados`,
     economyTitle: "🔷 Modelo Econômico Sustentável",
     economy: `A estrutura econômica do OpenStarGate é projetada para estabilidade a longo prazo através dos seguintes mecanismos:
 

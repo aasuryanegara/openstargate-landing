@@ -1,7 +1,8 @@
+
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { telegram } from "lucide-react";
+import { Telegram } from "lucide-react";
 
 const CommunitySection = () => {
   const [email, setEmail] = useState("");
@@ -31,40 +32,19 @@ const CommunitySection = () => {
               
               <div className="space-y-4">
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-crypto-blue/20 flex items-center justify-center">
-                    <span className="text-crypto-blue font-bold">1</span>
-                  </div>
-                  <p className="text-white/80">Join our Discord for daily discussions and support</p>
-                </div>
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-crypto-purple/20 flex items-center justify-center">
-                    <span className="text-crypto-purple font-bold">2</span>
-                  </div>
-                  <p className="text-white/80">Follow us on Twitter for announcements and updates</p>
-                </div>
-                <div className="flex items-center gap-3">
                   <div className="w-10 h-10 rounded-full bg-crypto-green/20 flex items-center justify-center">
-                    <span className="text-crypto-green font-bold">3</span>
+                    <span className="text-crypto-green font-bold">1</span>
                   </div>
-                  <p className="text-white/80">Subscribe to our newsletter for exclusive rewards</p>
+                  <p className="text-white/80">Join our Telegram for daily discussions and support</p>
                 </div>
               </div>
               
               <div className="flex gap-4 mt-8">
-                <Button className="bg-[#5865F2] hover:bg-[#5865F2]/80 text-white">
-                  Discord
-                </Button>
-                <Button className="bg-[#1DA1F2] hover:bg-[#1DA1F2]/80 text-white">
-                  Twitter
-                </Button>
-                <Button className="bg-[#6441A4] hover:bg-[#6441A4]/80 text-white">
-                  Twitch
-                </Button>
                 <Button
                   className="bg-[#229ED9] hover:bg-[#229ED9]/80 text-white"
                   onClick={() => window.open("https://t.me/+cFpo2VMq47w5YzI8", "_blank")}
                 >
-                  <telegram className="w-4 h-4 mr-2" />
+                  <Telegram className="w-4 h-4 mr-2" />
                   Telegram
                 </Button>
               </div>

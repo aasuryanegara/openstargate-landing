@@ -1,5 +1,6 @@
+
 import { useState, useEffect } from "react";
-import { Gamepad, Menu, X, Globe } from "lucide-react";
+import { Menu, X, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -45,8 +46,8 @@ const Navbar = ({ selectedLang, setSelectedLang }: { selectedLang: string, setSe
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
         <a href="#" className="flex items-center gap-2">
-          <div className="bg-crypto-purple/20 p-2 rounded-lg">
-            <Gamepad className="h-6 w-6 text-crypto-purple animate-pulse-glow" />
+          <div className="h-10 w-10">
+            <img src="/lovable-uploads/4dcbb498-1a33-45a4-a684-a743aaef306d.png" alt="OpenStarGate Logo" className="h-full w-full object-contain" />
           </div>
           <span className="text-2xl font-bold tracking-tight">
             <span className="text-white">Open</span>

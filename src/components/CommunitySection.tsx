@@ -1,17 +1,15 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { Telegram } from "lucide-react";
 
 const CommunitySection = () => {
   const [email, setEmail] = useState("");
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // This would typically connect to a newsletter service
     console.log("Submitted email:", email);
     setEmail("");
-    // Add success message logic here
   };
 
   return (
@@ -61,6 +59,13 @@ const CommunitySection = () => {
                 </Button>
                 <Button className="bg-[#6441A4] hover:bg-[#6441A4]/80 text-white">
                   Twitch
+                </Button>
+                <Button
+                  className="bg-[#229ED9] hover:bg-[#229ED9]/80 text-white"
+                  onClick={() => window.open("https://t.me/+cFpo2VMq47w5YzI8", "_blank")}
+                >
+                  <Telegram className="w-4 h-4 mr-2" />
+                  Telegram
                 </Button>
               </div>
             </div>

@@ -1,4 +1,3 @@
-
 import React from "react";
 
 // Translations for each language
@@ -61,18 +60,11 @@ Through a strong market protection strategy, OpenStarGate ensures that the ecosy
         a: "Of course. A small fee is charged to support research and development and infrastructure to continuously train the OpenStarGate AI.",
       },
     ],
-    teamTitle: "🧑‍💻 Meet the Core Team",
-    team: `Dr. Zeon – Founder & Chief AI Architect
-Ex-NASA machine learning scientist and creator of the prediction logic behind OpenStarGate’s intelligence.
-Lina Owei – COO & Tokenomics Designer
-Blockchain economist and token strategist who designed OPS’s fair minting and reward structure.
-Kevin Suharto – Head of Community & Partnerships
-with years of experience in building communities across Asia and LATAM.
-OpenStarGate (AI) – Lead Game Designer
-The AI persona behind the games, trained on thousands of blockchain datasets and probability theories.`,
     beginTitle: "✨ Begin Your Journey",
     begin: `OpenStarGate is ready to take you beyond the limits of games. Explore the future of entertainment, economics, and evolution 
-Dare to predict. Dare to win. Dare to open the star gate.`
+Dare to predict. Dare to win. Dare to open the star gate.`,
+    teamTitle: "",
+    team: "",
   },
   id: {
     welcome: "✨ Selamat datang di OpenStarGate",
@@ -132,18 +124,11 @@ Dengan strategi perlindungan pasar yang kuat, OpenStarGate memastikan ekosistem 
         a: "Tentu saja. Biaya kecil digunakan untuk mendukung riset dan infrastruktur serta pelatihan AI OpenStarGate secara berkelanjutan.",
       },
     ],
-    teamTitle: "🧑‍💻 Tim Inti",
-    team: `Dr. Zeon – Pendiri & Arsitek AI Utama
-Mantan ilmuwan machine learning NASA dan pencipta logika prediksi kecerdasan OpenStarGate.
-Lina Owei – COO & Desainer Tokenomik
-Ekonom blockchain dan token strategist yang merancang skema pencetakan dan reward OPS yang adil.
-Kevin Suharto – Kepala Komunitas & Kemitraan
-Dengan pengalaman membangun komunitas di Asia dan LATAM.
-OpenStarGate (AI) – Perancang Game Utama
-AI di balik games, dilatih dari ribuan dataset blockchain dan teori probabilitas.`,
     beginTitle: "✨ Mulai Perjalanan Anda",
     begin: `OpenStarGate siap membawa Anda melampaui batas permainan. Jelajahi masa depan hiburan, ekonomi, dan evolusi.
-Berani menebak. Berani menang. Berani buka star gate.`
+Berani menebak. Berani menang. Berani buka star gate.`,
+    teamTitle: "",
+    team: "",
   },
   tr: {
     welcome: "✨ OpenStarGate'a Hoş Geldiniz",
@@ -203,18 +188,11 @@ Güçlü piyasa koruma stratejisi ile OpenStarGate ekosisteminin istikrarlı, ad
         a: "Elbette. Küçük bir ücret, araştırma-geliştirme ve altyapı ile OpenStarGate AI’ın sürekli eğitimi için ayrılır.",
       },
     ],
-    teamTitle: "🧑‍💻 Çekirdek Takım",
-    team: `Dr. Zeon – Kurucu & Baş AI Mimarı
-Eski NASA makine öğrenimi bilimcisi, OpenStarGate zekasının tahmin mantığının yaratıcısı.
-Lina Owei – COO & Tokenomik Tasarımcısı
-OPS’ın adil çıkarımı ve ödül sistemini tasarlayan blok zinciri ekonomisti ve stratejist.
-Kevin Suharto – Topluluk ve Ortaklıklar Başkanı
-Asya ve LATAM'da yıllarca topluluk tecrübesine sahiptir.
-OpenStarGate (AI) – Baş Oyun Tasarımcısı
-Binlerce blok zinciri verisi ve olasılık teorisi ile eğitilmiş AI karakteri.`,
     beginTitle: "✨ Yolculuğa Başla",
     begin: `OpenStarGate sizi oyunların ötesine taşımaya hazır. Eğlence, ekonomi ve evrimin geleceğini keşfedin.
-Tahmin etmeye cesaret et. Kazanmaya cesaret et. Yıldız kapısını açmaya cesaret et.`
+Tahmin etmeye cesaret et. Kazanmaya cesaret et. Yıldız kapısını açmaya cesaret et.`,
+    teamTitle: "",
+    team: "",
   },
   pt: {
     welcome: "✨ Bem-vindo ao OpenStarGate",
@@ -274,18 +252,11 @@ Através de forte proteção de mercado, o OpenStarGate garante que o ecossistem
         a: "Com certeza. Uma pequena taxa é cobrada para manter pesquisa, infraestrutura e o treinamento contínuo da IA OpenStarGate.",
       },
     ],
-    teamTitle: "🧑‍💻 Conheça o Time Principal",
-    team: `Dr. Zeon – Fundador & Arquiteto Chefe de IA
-Ex-cientista de machine learning da NASA e criador da lógica de previsão de OpenStarGate.
-Lina Owei – COO & Estrategista de Tokenomics
-Economista e estrategista de tokens que desenhou a estrutura justa de mint e recompensas do OPS.
-Kevin Suharto – Líder de Comunidade & Parcerias
-Anos de experiência construindo comunidades na Ásia e LATAM.
-OpenStarGate (IA) – Líder de Design de Jogos
-A persona AI por trás dos jogos, treinada em milhares de conjuntos de dados blockchain e teoria de probabilidades.`,
     beginTitle: "✨ Comece Sua Jornada",
     begin: `OpenStarGate está pronto para te levar além dos limites dos jogos. Explore o futuro do entretenimento, economia e evolução.
-Ouse prever. Ouse vencer. Ouse abrir o portal das estrelas.`
+Ouse prever. Ouse vencer. Ouse abrir o portal das estrelas.`,
+    teamTitle: "",
+    team: "",
   }
 };
 
@@ -302,42 +273,40 @@ const IntroSection = ({ lang }: { lang: string }) => {
   const t = translations[lang] || translations.en;
 
   return (
-    <section className="py-20 relative z-10 bg-black/90">
+    <section className="py-20 relative z-10">
       <div className="container mx-auto px-4 max-w-4xl">
-        <div className="mb-10">
-          <h2 className="text-3xl md:text-4xl font-bold text-gradient mb-4">{t.welcome}</h2>
-          <p className="text-white/90 text-lg whitespace-pre-line">{t.intro}</p>
-        </div>
-        <div className="mb-8">
-          <h3 className="text-2xl font-semibold text-crypto-blue mb-2">{t.visionTitle}</h3>
-          <div className="text-white/80 whitespace-pre-line">{parseBullets(t.vision)}</div>
-        </div>
-        <div className="mb-8">
-          <h3 className="text-2xl font-semibold text-crypto-purple mb-2">{t.tokenTitle}</h3>
-          <div className="text-white/80 whitespace-pre-line">{parseBullets(t.token)}</div>
-        </div>
-        <div className="mb-8">
-          <h3 className="text-2xl font-semibold text-crypto-green mb-2">{t.economyTitle}</h3>
-          <div className="text-white/80 whitespace-pre-line">{parseBullets(t.economy)}</div>
-        </div>
-        <div className="mb-8">
-          <h3 className="text-xl font-semibold text-crypto-yellow mb-2">{t.faqTitle}</h3>
-          <div className="space-y-3">
-            {t.faqs.map((f, i) => (
-              <div key={i}>
-                <p className="font-medium text-white">{f.q}</p>
-                <p className="text-white/80">{f.a}</p>
-              </div>
-            ))}
+        <div className="bg-crypto-dark-gray/30 backdrop-blur-sm border border-white/5 rounded-2xl p-8 md:p-12">
+          <div className="mb-10">
+            <h2 className="text-3xl md:text-4xl font-bold text-gradient mb-4">{t.welcome}</h2>
+            <p className="text-white/90 text-lg whitespace-pre-line">{t.intro}</p>
           </div>
-        </div>
-        <div className="mb-8">
-          <h3 className="text-xl font-semibold text-crypto-pink mb-2">{t.teamTitle}</h3>
-          <pre className="text-white/80 whitespace-pre-line bg-crypto-dark-gray/60 rounded p-4">{t.team}</pre>
-        </div>
-        <div>
-          <h3 className="text-2xl font-bold text-gradient mb-2">{t.beginTitle}</h3>
-          <p className="text-white/90 whitespace-pre-line">{t.begin}</p>
+          <div className="mb-8">
+            <h3 className="text-2xl font-semibold text-crypto-blue mb-2">{t.visionTitle}</h3>
+            <div className="text-white/80 whitespace-pre-line">{parseBullets(t.vision)}</div>
+          </div>
+          <div className="mb-8">
+            <h3 className="text-2xl font-semibold text-crypto-purple mb-2">{t.tokenTitle}</h3>
+            <div className="text-white/80 whitespace-pre-line">{parseBullets(t.token)}</div>
+          </div>
+          <div className="mb-8">
+            <h3 className="text-2xl font-semibold text-crypto-green mb-2">{t.economyTitle}</h3>
+            <div className="text-white/80 whitespace-pre-line">{parseBullets(t.economy)}</div>
+          </div>
+          <div className="mb-8">
+            <h3 className="text-xl font-semibold text-crypto-yellow mb-2">{t.faqTitle}</h3>
+            <div className="space-y-3">
+              {t.faqs.map((f, i) => (
+                <div key={i}>
+                  <p className="font-medium text-white">{f.q}</p>
+                  <p className="text-white/80">{f.a}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div>
+            <h3 className="text-2xl font-bold text-gradient mb-2">{t.beginTitle}</h3>
+            <p className="text-white/90 whitespace-pre-line">{t.begin}</p>
+          </div>
         </div>
       </div>
     </section>

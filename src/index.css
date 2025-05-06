@@ -1,3 +1,7 @@
+
+/* Import Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -130,6 +134,3 @@
   50% { opacity: 1; }
   100% { transform: translateY(-100px) translateX(20px); opacity: 0; }
 }
-
-/* Import Google fonts */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');

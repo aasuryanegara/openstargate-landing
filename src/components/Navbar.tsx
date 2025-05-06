@@ -1,6 +1,6 @@
 
 import { useState, useEffect } from "react";
-import { Menu, X, Globe } from "lucide-react";
+import { menu, x, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -114,13 +114,21 @@ const Navbar = ({ selectedLang, setSelectedLang }: { selectedLang: string, setSe
           className="md:hidden text-white"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
-          {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          {mobileMenuOpen ? <x className="h-6 w-6" /> : <menu className="h-6 w-6" />}
         </button>
       </div>
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
         <div className="fixed inset-0 bg-black/95 z-40 pt-20 px-4 md:hidden">
+          {/* Close button at top-right corner */}
+          <button 
+            className="absolute top-4 right-4 text-white p-2"
+            onClick={() => setMobileMenuOpen(false)}
+          >
+            <x className="h-6 w-6" />
+          </button>
+          
           <nav className="flex flex-col gap-6 items-center">
             <a
               href="#games"
